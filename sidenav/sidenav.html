@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="sidenav/sidenav.css">
+
+<div class="open-close_sidenav_btn bars-linkcontainer" style="left: 10px;top: 10px;border-radius: 10px;padding: 14px;padding-top: 10px;padding-bottom: 10px;  position: absolute;" onclick="openNav()"> 
+    <i class="fas fa-bars"></i>
+</div>
+<!-- sidenav -->
+  <div id="mySidenav" class="sidenav" >
+    <div class="open-close_sidenav_btn close-linkcontainer" style="right: 10px;top: 10px;background-color: transparent;z-index: 1500000000;" onclick="closeNav()"> 
+        <i class="fas fa-times"></i>
+    </div>
+     <div class="sidenav-scroller-container">   
+    <div class="sidenavlinkscontainer">   
+        <a href="blog.html" class="sidenavlinks"> Blog </a>
+        <a href="devblog.html" class="sidenavlinks"> Devblog </a>
+        <a href="portfolio.html" class="sidenavlinks"> Portfolio </a>
+    </div>
+    </div>
+
+<div style="     
+position: absolute;
+bottom: 0;
+padding-bottom: 10px;
+padding-top: 10px;
+justify-content: center;
+background-color: #000000;
+width: 100%;
+text-align: center;
+"> 
+    <div class="nav_socialinks" style="">
+                <a href="https://twitter.com/julian_julif" class="twitter-linkcontainer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/JulifIsBetterThanYourMom/" class="facebook-linkcontainer"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/_julif_/" class="instagram-linkcontainer"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/julif" class="github-linkcontainer"><i class="fab fa-github"></i></a>
+            </div>
+            </div>
+</div>
+
+
+<script type="text/javascript">
+
+    function openNav() {
+    
+    var style = getComputedStyle(document.body);
+    // console.log(style.getPropertyValue('--sidenav_width'));
+    var sidenav_width=style.getPropertyValue('--sidenav_width');
+    
+       
+    
+    document.getElementById("mySidenav").style.width =sidenav_width;
+    // document.getElementById("banner").style.marginLeft = "100vw";
+    // document.getElementById("open-menu-desktop").style.display = "none";
+    // document.getElementById("close-menu-desktop").style.display = "inherit";
+    }
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("banner").style.marginLeft= "0";
+    //  document.getElementById("open-menu-desktop").style.display = "inherit";
+    // document.getElementById("close-menu-desktop").style.display = "none";
+    }
+      </script>
+
