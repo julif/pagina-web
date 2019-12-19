@@ -4,111 +4,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- --> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="animate.css"> 
-
+    <!-- sidenav -->
+    <link rel="stylesheet" href="css/sidenav.css">
     <!-- banner -->
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/banner_animation.css"> 
     <link rel="stylesheet" href="css/banner_responsive.css">  
     <script src="parallax/jarallax.min.js"></script>
-    <!-- otra cosa -->
+    <!-- about me -->
     <style>
     :root { --sidenav_width: 30vw;}
      body{margin: 0px auto;}
     .no-landscape {display: inherit;}
-
-    .open-close_sidenav_btn {
-    padding: 15px;
-    color: #fff;
-    background-color: #000;
-    cursor: pointer;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    position: absolute;
-    /* position: fixed; */
-  
-    z-index: 5000;
-    top: 0;
-}
-
-.open-close_sidenav_btn {
-    font-size: 3vh;
-}
-@media screen and (max-width: 655px) and (orientation: landscape){
-.open-close_sidenav_btn {
-    font-size: 5vh;
-}
-}
-
-
-
-
-
-
-
-
-.sidenav {
-    /* height: 100vh; */
-    height: 100%;
-    width: 0px;
-    z-index: 1;
-    top: 0;
-    position: absolute;
-    position: fixed;
-    left: 0;
-    background-color: #000000;
-    overflow-x: hidden;
-    /* transition: var(--animation-delay); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    z-index: 100000;
-}
-.sidenav-scroller-container {
-    /* position: absolute; */
-    /* top: 74px; */
-    /* height: 151px; */
-    height: 85%;
-    width: -webkit-fill-available;
-    /* background-color: #ff000030; */
-    z-index: 500000000;
-    overflow: scroll;
-    /* width: 80%; */
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.sidenavlinkscontainer {
-    text-align: center;
-    display: grid;
-    width: inherit;
-    margin-right: 33px;
-    margin-left: 33px;
-}
-.sidenavlinkscontainer a:hover{background-color: #557ad1;}
-.sidenav .nav_socialinks a {
-    color: #f6f7fb;
-    display: -webkit-inline-box;
-    /* background-color: var(--sidenav-background-color); */
-    background-color: #0e111d00;
-    margin-left: 6px;
-    margin-right: 6px;
-    padding: 11px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-size: 2.5vh;
-    border-bottom: 0px;
-}
-.sidenav a {
-    font-family: "proxima-nova",sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 2.5vh;
-    padding: 10px;
-    text-transform: uppercase;
-    border-bottom: solid #4a4a4a54 2px;
-    border-bottom: solid #141415 2px;
-    /* transition: 0.6s; */
-}
     </style>
     <style>
     
@@ -190,16 +97,13 @@ container {
       </div>
        <div class="sidenav-scroller-container">   
       <div class="sidenavlinkscontainer">   
-          <a href="#" class="sidenavlinks"> Blog </a>
-          <a href="#" class="sidenavlinks"> Devblog </a>
-          <a href="#" class="sidenavlinks"> Portfolio </a>
+          <a href="blog.html" class="sidenavlinks"> Blog </a>
+          <a href="devblog.html" class="sidenavlinks"> Devblog </a>
+          <a href="portfolio.html" class="sidenavlinks"> Portfolio </a>
       </div>
       </div>
 
-<div style="       /* text-align: center; */
-  /* display: inline-flex; */
-  /* width: -webkit-fill-available; */
-  /* display: flex; */
+<div style="     
   position: absolute;
   bottom: 0;
   padding-bottom: 10px;
@@ -224,9 +128,9 @@ container {
           <img id="julif-logo" src="img/julif_icon.png" alt="logo Julif">
           <div id="banner_nombre"> Julian Filardi </div>
           <div id="banner_links" style="text-align: center;">
-            <a id="link1" href="*">Blog</a>
-            <a id="link2" href="*">Devblog</a>
-            <a id="link3" href="*">Portfolio</a>
+            <a id="link1" href="blog.html">Blog</a>
+            <a id="link2" href="devblog.html">Devblog</a>
+            <a id="link3" href="portfolio.html">Portfolio</a>
           </div>
           <div class="no-landscape" style="text-align: center;display: inline-flex;width: -webkit-fill-available;justify-content: center;">
             <div class="nav_socialinks">
