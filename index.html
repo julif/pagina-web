@@ -1,35 +1,70 @@
-<html> 
+<html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- hacer que el ancho se adapte a dispositivos -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- --> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="animate.css"> 
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- banner -->
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/banner_animation.css"> 
+    <link rel="stylesheet" href="css/banner_responsive.css">  
+    <script src="parallax/jarallax.min.js"></script>
     <style>
-      :root { --sidenav_width: 30vw;}
-       body{margin: 0px auto;}
-      .no-landscape {display: inherit;}
-      </style>
-  </head> 
-  <body> 
-    <div id="included_banner"></div>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-    <p> hola mundo </p>
-  </body> 
-  <script> 
-    $(function(){
-      $("#included_banner").load("partials/banner/banner.html");
-    });
-  </script> 
+          :root { --sidenav_width: 30vw;}
+     body{margin: 0px auto;}
+    .no-landscape {display: inherit;}
+    
+    </style>
+  
+  </head>
+  <body>
+    <!-- banner -->
+    <banner class="parallax-background" id="banner">
+      <div id="banner_content">
+        <div style="text-align: center;">
+          <img id="julif-logo" src="img/julif_icon.png" alt="logo Julif">
+          <div id="banner_nombre"> Julian Filardi </div>
+          <div id="banner_links" style="text-align: center;">
+            <a id="link1" href="blog.html">Blog</a>
+            <a id="link2" href="devblog.html">Devblog</a>
+            <a id="link3" href="portfolio.html">Portfolio</a>
+          </div>
+          <div class="no-landscape" style="text-align: center;display: inline-flex;width: -webkit-fill-available;justify-content: center;">
+            <div class="nav_socialinks">
+                <a href="https://twitter.com/julian_julif" class="twitter-linkcontainer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/JulifIsBetterThanYourMom/" class="facebook-linkcontainer"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/_julif_/" class="instagram-linkcontainer"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/julif" class="github-linkcontainer"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </banner>
+    </body>
+    
+  <script >
+    // parallax
+  (function($) {
+     $.fn.outerFind = function(selector) {
+       return this.find(selector).addBack(selector);
+      };
+       // .mbr-parallax-background
+       function initParallax(card) {
+        setTimeout(function() {
+          $(card).outerFind('.parallax-background')
+          .jarallax({speed: 0.6 }).css('position', 'relative');}, 0);
+        }
+        if ($.fn.jarallax  ) {
+          $(window).on('update.parallax', function(event) {
+            setTimeout(function() {
+              var $jarallax = $('.parallax-background');
+              $jarallax.jarallax('coverImage');
+              $jarallax.jarallax('clipContainer');
+              $jarallax.jarallax('onScroll');
+            }, 0);
+          });
+          initParallax(document.body);
+        }
+  })(jQuery);
+      </script>
 </html>
-
-
