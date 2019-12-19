@@ -73,4 +73,7 @@ footer{ right: auto;}
 
  
 }
-@media screen and (min-width:1000px) and (orientation: landscape)  {  #banner_nombre{ padding-bottom: 20px;}{ }
+@media screen and (min-width:1000px) and (orientation: landscape)  { 
+   #banner_nombre{ padding-bottom: 20px;}
+   banner .nav_socialinks{  margin-top: 15px;}
+  }

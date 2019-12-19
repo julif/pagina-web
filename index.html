@@ -16,7 +16,7 @@
      body{margin: 0px auto;}
     .no-landscape {display: inherit;}
 
-    .zeo {
+    .open-close_sidenav_btn {
     padding: 15px;
     color: #fff;
     background-color: #000;
@@ -30,11 +30,11 @@
     top: 0;
 }
 
-.zeo {
+.open-close_sidenav_btn {
     font-size: 3vh;
 }
 @media screen and (max-width: 655px) and (orientation: landscape){
-.zeo {
+.open-close_sidenav_btn {
     font-size: 5vh;
 }
 }
@@ -84,6 +84,7 @@
     margin-right: 33px;
     margin-left: 33px;
 }
+.sidenavlinkscontainer a:hover{background-color: #557ad1;}
 .sidenav .nav_socialinks a {
     color: #f6f7fb;
     display: -webkit-inline-box;
@@ -179,12 +180,12 @@ container {
   </style>
   </head>
   <body>
-    <div class="zeo bars-linkcontainer" style="left: 10px;top: 10px;border-radius: 10px;padding: 14px;padding-top: 10px;padding-bottom: 10px;  position: fixed;" onclick="openNav()"> 
+    <div class="open-close_sidenav_btn bars-linkcontainer" style="left: 10px;top: 10px;border-radius: 10px;padding: 14px;padding-top: 10px;padding-bottom: 10px;  position: absolute;" onclick="openNav()"> 
       <i class="fas fa-bars"></i>
     </div>
      <!-- sidenav -->
     <div id="mySidenav" class="sidenav" >
-      <div class="zeo close-linkcontainer" style="right: 10px;top: 10px;background-color: transparent;" onclick="closeNav()"> 
+      <div class="open-close_sidenav_btn close-linkcontainer" style="right: 10px;top: 10px;background-color: transparent;z-index: 1500000000;" onclick="closeNav()"> 
           <i class="fas fa-times"></i>
       </div>
        <div class="sidenav-scroller-container">   
