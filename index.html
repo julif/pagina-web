@@ -42,37 +42,39 @@
         </div>
       </div>
     </banner>
+        <!-- sidenav -->
+        <div id="included_about_me"></div>
     
     </body>
-    
-  <script >
-    // parallax
-  (function($) {
-     $.fn.outerFind = function(selector) {
-       return this.find(selector).addBack(selector);
-      };
-       // .mbr-parallax-background
-       function initParallax(card) {
-        setTimeout(function() {
-          $(card).outerFind('.parallax-background')
-          .jarallax({speed: 0.6 }).css('position', 'relative');}, 0);
-        }
-        if ($.fn.jarallax  ) {
-          $(window).on('update.parallax', function(event) {
-            setTimeout(function() {
-              var $jarallax = $('.parallax-background');
-              $jarallax.jarallax('coverImage');
-              $jarallax.jarallax('clipContainer');
-              $jarallax.jarallax('onScroll');
-            }, 0);
-          });
-          initParallax(document.body);
-        }
-  })(jQuery);
-      </script>
       <script> 
         $(function(){
-          $("#included_sidenav").load("sidenav/sidenav.html"); 
+          $("#included_sidenav").load("sidenav/sidenav.html");
+          $("#included_about_me").load("about_me/about_me.html"); 
         });
       </script> 
+        <script >
+          // parallax
+        (function($) {
+           $.fn.outerFind = function(selector) {
+             return this.find(selector).addBack(selector);
+            };
+             // .mbr-parallax-background
+             function initParallax(card) {
+              setTimeout(function() {
+                $(card).outerFind('.parallax-background')
+                .jarallax({speed: 0.6 }).css('position', 'relative');}, 0);
+              }
+              if ($.fn.jarallax  ) {
+                $(window).on('update.parallax', function(event) {
+                  setTimeout(function() {
+                    var $jarallax = $('.parallax-background');
+                    $jarallax.jarallax('coverImage');
+                    $jarallax.jarallax('clipContainer');
+                    $jarallax.jarallax('onScroll');
+                  }, 0);
+                });
+                initParallax(document.body);
+              }
+        })(jQuery);
+            </script>
 </html>
