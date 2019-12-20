@@ -21,7 +21,7 @@
     width: 100%;
     max-width: 1200;
 }
-@media screen and (max-width:1000px) { .container{padding: 20px;} }
+@media screen and (max-width:1000px) { .container{     width: 85%;} }
 
     
     </style>
@@ -54,6 +54,8 @@
     </banner>
         <!-- about me -->
         <div id="included_about_me"></div>
+        <!-- gallery -->
+        <div id="included_ilustraciones"></div>
          <!-- footer -->
          <div id="included_footer"></div>
     
@@ -62,6 +64,7 @@
         $(function(){
           $("#included_sidenav").load("sidenav/sidenav.html");
           $("#included_about_me").load("about_me/about_me.html");
+          $("#included_ilustraciones").load("ilustraciones/ilustraciones.html"); 
           $("#included_footer").load("footer/footer.html"); 
         });
       </script> 
