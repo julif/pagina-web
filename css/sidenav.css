@@ -78,7 +78,8 @@
   border-bottom: solid #141415 2px;
   /* transition: 0.6s; */
 }
-@media screen and (max-width: 655px) and (orientation: landscape){
-  .open-close_sidenav_btn {font-size: 5vh;}
-  .sidenavlinks{ font-size: 5vh;}
+@media screen and (max-width:1000px) and (orientation: landscape){
+  .open-close_sidenav_btn {font-size: 6vh;}
+  .sidenav .nav_socialinks a{ font-size: 5vh;}
+  .sidenav a {font-size: 4.5vh;}
 }
