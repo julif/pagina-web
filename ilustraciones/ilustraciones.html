@@ -9,7 +9,7 @@
 
 
 
-<section  id="Ilustraciones" style="    padding-top: 60px;
+<section  id="Ilustraciones" style="    
     padding-bottom: 60px;
     background-color: #ffffff;
     font-family: 'Segoe UI Light';
@@ -85,17 +85,26 @@
     transition: 0.8s;
     /* margin-bottom: -5px; */
 }
-@media (max-width: 990px){
-    .my-gallery figure {
+@media screen and (max-width:1000px) and (orientation: landscape){
+  .my-gallery figure {
+    width: 25%;
+    margin-bottom: -5px;
+  }
+  .my-gallery {
+    margin-top: 0px;
+  }
+}
+
+
+
+@media screen and (max-width:1000px) and (orientation: portrait){
+  .my-gallery {
+    margin-top: 0px;
+  }
+  .my-gallery figure {
     width: 50%;
     margin-bottom: -5px;
-}
-}
-@media (max-width: 400px){
-
-    .my-gallery figure {
-    width: 100%;
-}
+  }
 }
 
 
