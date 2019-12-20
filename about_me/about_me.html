@@ -10,7 +10,7 @@
     max-width: 1200px;}
     .media-container-row{display: flex;
     align-items: center;}
-    .media-content{    font-family: 'Rubik', sans-serif;margin-left: 20px;
+    .media-content{    font-family: 'Rubik', sans-serif;margin-left: 50px;
     font-size: 1.5rem;}
 
     .mbr-figure{    max-width: 25%;}
@@ -27,12 +27,27 @@
 
 
 
-@media (max-width: 992px){
+@media screen and (max-width:1000px) and (orientation: portrait){
     .media-container-row {
      display: block; 
     align-items: center;
 }
+.mbr-figure{   
+     max-width: none;   
+ display: flex;
+    justify-content: center}
+    .mbr-figure img {max-width: 250px;}
+
+.about_me_title{font-size: 6vh;
+    text-align: center;}
+    .media-content { font-size: 3vh;margin-left: 0px;}
 }
+@media screen and (max-width:1000px) and (orientation: landscape)  {
+    .media-container-row{display: flex;
+    align-items: center;}
+    .about_me_title{ font-size: 10vh;}
+    .media-content{font-size: 5vh;margin-left: 30px;}
+  }
 </style>
 <about_me>
     <container>
