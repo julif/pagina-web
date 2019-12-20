@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- hacer que el ancho se adapte a dispositivos -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- --> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="icomoon.css">
     <link rel="stylesheet" href="animate.css"> 
     <!-- banner -->
     <link rel="stylesheet" href="css/banner.css">
@@ -13,6 +14,11 @@
           :root { --sidenav_width: 30vw;}
      body{margin: 0px auto;}
     .no-landscape {display: inherit;}
+    .container {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1200;
+}
     
     </style>
   
@@ -42,14 +48,17 @@
         </div>
       </div>
     </banner>
-        <!-- sidenav -->
+        <!-- about me -->
         <div id="included_about_me"></div>
+         <!-- footer -->
+         <div id="included_footer"></div>
     
     </body>
       <script> 
         $(function(){
           $("#included_sidenav").load("sidenav/sidenav.html");
-          $("#included_about_me").load("about_me/about_me.html"); 
+          $("#included_about_me").load("about_me/about_me.html");
+          $("#included_footer").load("footer/footer.html"); 
         });
       </script> 
         <script >

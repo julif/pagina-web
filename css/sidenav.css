@@ -79,7 +79,7 @@
   /* transition: 0.6s; */
 }
 @media screen and (max-width:1000px) and (orientation: landscape){
-  .open-close_sidenav_btn {font-size: 6vh;}
-  .sidenav .nav_socialinks a{ font-size: 5vh;}
-  .sidenav a {font-size: 4.5vh;}
+  .open-close_sidenav_btn {font-size: 6vh!important;}
+  .sidenav .nav_socialinks a{ font-size: 5vh!important;}
+  .sidenav a {font-size: 4.5vh!important;}
 }
