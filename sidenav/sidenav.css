@@ -81,4 +81,6 @@
 @media screen and (max-width: 655px) and (orientation: landscape){
   .open-close_sidenav_btn {font-size: 5vh;}
   .sidenavlinks{ font-size: 5vh;}
+  .sidenav a{ font-size: 5vh;}
+
 }

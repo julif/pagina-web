@@ -14,13 +14,15 @@
     <script src="parallax/jarallax.min.js"></script>
     <style>
           :root { --sidenav_width: 30vw;}
-     body{margin: 0px auto;}
+     body{margin: 0px auto;     font-family: "proxima-nova",sans-serif;}
     .no-landscape {display: inherit;}
     .container {
     margin: 0px auto;
     width: 100%;
     max-width: 1200;
 }
+h2{    font-family: "proxima-nova",sans-serif;font-size: 5vh; text-transform: uppercase;     font-weight: 500;}
+h3{font-size: 5vh;}
 @media screen and (max-width:1000px) { .container{     width: 85%;} }
 
     
@@ -92,5 +94,6 @@
                 initParallax(document.body);
               }
         })(jQuery);
-            </script>
+            </script> <script src="smoothscroll/smooth-scroll.js"></script> <!-- para el scroll smooth -->
+
 </html>
