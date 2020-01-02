@@ -1,10 +1,77 @@
+<!doctype   html >
 <html>
-<head>
+    <head>
+        <meta charset="utf-8">
+        <title> Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+         <link rel="stylesheet" href="css_vars.css" type="text/css"><!-- css vars --> 
+         <link rel="stylesheet" href="blog.css" type="text/css" media="screen"><!-- hoja de estilos pricipal -->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- -->  
+         <link rel="shortcut icon" href="favicon.ico">
+         <style>
 
-</head>
-<body>
-</body>
-blog
+/* css general */
+.container {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1200px;
+}
 
+body{
+  padding: 0;
+  margin: 0;
+}
+
+navbar{
+  padding: 20px;
+  display: block;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+/* footer{
+  padding: 20px;
+  display: block;
+  color: white;
+  background-color: black;
+  text-align: center;
+} */
+section{
+  padding: 20px;
+  text-align: center;
+}
+
+/*solución final*/
+html, body{
+  height:100%;
+}
+.contenedor{
+   min-height: 89.3%;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+footer{
+  margin-top: -58px;
+}
+         </style>
+    </head>
+    <body>
+      <div class="contenedor">
+        <div id="included_navbar"></div>
+        <style> #nav-blog-link{ color: var(--active-color)!important } </style>
+        <section>
+          Blog  
+        </section>
+      </div>
+      <div id="included_footer"></div>
+      
+
+    </body>
+    <script> 
+      $(function(){
+        $("#included_navbar").load("navbar/navbar.html");
+        $("#included_footer").load("footer/footer.html");  
+      });
+    </script> 
 </html>
-

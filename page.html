@@ -1,0 +1,268 @@
+<!doctype   html >
+<html >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+         <link rel="stylesheet" href="css_vars.css" type="text/css"><!-- css vars --> 
+         <!-- <link rel="stylesheet" href="blog.css" type="text/css" media="screen">hoja de estilos pricipal -->
+         <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- -->  
+         <link rel="shortcut icon" href="favicon.ico">
+         <style>
+
+/* css general */
+.container {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+navbar{
+  padding: 20px;
+  display: block;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+/* footer{
+  padding: 20px;
+  display: block;
+  color: white;
+  background-color: black;
+  text-align: center;
+} */
+section{
+  padding: 20px;
+  text-align: center;
+}
+
+/*solución final*/
+html, body{
+  height:100%;
+}
+.contenedor{
+   min-height: 89.3%;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+}
+footer{
+  margin-top: -58px;
+}
+         </style>
+         <style> 
+         body{ background-color: var(--page-body-bg-color); }
+
+         h1 {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 10px;
+}
+p {
+    /* font-family: "proxima-nova",sans-serif !important; */
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    color: #444;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+h1,h2,p{    max-width: var(--content-max-width);
+    margin: 0px auto;}
+
+   h2{     padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  h1{  text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;}
+    p{     padding: 15px;
+      padding-left: 25px;
+    padding-right: 25px;
+}
+         
+         </style>
+
+         <style>
+         .wp-block-cover, .wp-block-cover-image {
+    align-items: center;
+    background-color: #000;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.5em;
+    min-height: 430px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.wp-block-cover, .wp-block-cover-image {
+    align-items: center;
+    background-color: #000;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.5em;
+    min-height: 430px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.wp-block-cover-image.has-background-dim:before, .wp-block-cover.has-background-dim:before {
+    background-color: inherit;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+.wp-block-cover-image.has-background-dim:before, .wp-block-cover.has-background-dim:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: inherit;
+    opacity: .5;
+    z-index: 1;
+}
+
+.wp-block-cover, .wp-block-cover-image {
+    position: relative;
+    background-color: #000;
+    background-size: cover;
+    background-position: 50%;
+    min-height: 430px;
+    width: 100%;
+    margin: 0 0 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.wp-block-cover-image .wp-block-cover-image-text, .wp-block-cover-image .wp-block-cover-text, .wp-block-cover-image h2, .wp-block-cover .wp-block-cover-image-text, .wp-block-cover .wp-block-cover-text, .wp-block-cover h2 {
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.25;
+    z-index: 1;
+    margin-bottom: 0;
+    max-width: 610px;
+    padding: 14px;
+    text-align: center;
+}
+.wp-block-cover__inner-container p{
+  color: white;
+}
+
+
+
+.wp-block-columns{
+    /* background-color: #e8e8e8; */
+    margin: 0px auto;
+    /* max-width: fit-content; */
+    max-width: 1200px;
+    /* border: 2px solid #d8d8d8; */
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+li{font-size: 20px !important;
+    line-height: 1.3 !important;
+    color: #444;}
+    .wp-block-gallery {   margin: 0px auto;
+    /* max-width: fit-content; */
+    max-width: 1200px;   margin-top: 20px;
+    margin-bottom: 20px;
+  
+  }
+
+  .wp-block-image {  margin: 0px auto;
+    /* max-width: fit-content; */
+    max-width: 1200px;   margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+         </style>
+    </head>
+    <body>
+      <div class="contenedor">
+        <div id="included_navbar"></div><div class="wp-block-cover has-background-dim" style="background-image:url(http://julifweb.com/wp-content/uploads/2019/09/pagina11-desktop-esp.png)"><div class="wp-block-cover__inner-container">
+          <h1 style="text-align:center"> Pagina de prueba </h1>
+         
+          </div></div>
+
+        <h1>  cambiar de tema entre claro y oscuro con javascript  </h1>
+          <p>Siempre tuve una debilidad por la paginas con tema oscuro, en especial los blogs porque sentía que ayudaba a descansar la vista.</p>
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide has-2-columns"><!-- wp:column -->
+<div class="wp-block-column">
+  <p><strong>Converting Custom Content to Gutenberg</strong></p>
+  <!-- wp:list -->
+  <ul><li>Shortcodes to Blocks</li><li>ACF Fields to Blocks</li><li>CMB2 to Blocks</li></ul>
+</div>
+<div class="wp-block-column">
+<p><strong>Access Control &amp; User Permissions</strong></p>
+<!-- /wp:paragraph -->
+<ul><li>Controlling access to blocks</li><li>Controlling access to blocks based on user roles</li><li>Creating Block Templates</li><li>Applying User Roles to Block Templates</li></ul>
+<!-- wp:paragraph -->
+<p></p>
+</div>
+</div>
+<!-- /wp:columns -->
+
+
+
+<!-- wp:list -->
+
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+          <p> Pero cuando estaba diseñando esta blog no podia decidirme, me gustaban tanto la versión “ligth”como la “dark”. asi que diseñe este pequeño codigo en javascript para poder cambiar entre ambos en cualquier momento.</p>
+        <h2>cabezera:</h2>
+        <p>Bien, el primer paso es enlazar un archivo css en el head, pero el href va a quedar vacio, de esa manera mas tarde la funcion puede reemplazar el href con la ruta hacia el archivo correcto.Lo importante para que esto funcione es que el id sea “mainstyle”</p>
+        <!-- wp:image -->
+<figure class="wp-block-image"><img src="https://testgutenberg.com/wp-content/uploads/2018/11/Insert-Block-2-1.gif" alt="" class="wp-image-945"/></figure>
+<!-- /wp:image -->
+<p>Bien, el primer paso es enlazar un archivo css en el head, pero el href va a quedar vacio, de esa manera mas tarde la funcion puede reemplazar el href con la ruta hacia el archivo correcto.Lo importante para que esto funcione es que el id sea “mainstyle”</p>
+         
+<p class="has-drop-cap">Since the original <a href="https://gutenbergtimes.com/mullenweg-on-gutenberg-roll-out-plan/">WordPress 5.0 rollout plan</a> was announced last June at WordCamp EU, we've seen a spike in interest with Gutenberg, the new WordPress editor, from our WordPress VIP clients. We've been watching closely as Gutenberg has been selectively and optionally been rolled out across WordPress.com sites and the feedback that generated has been amazing! With each new release of Gutenberg, suggestions are being heard, bugs are being fixed, performance is being optimized, and a few new tools are finding their way into the editor.</p>
+<ul class="wp-block-gallery alignwide columns-3 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://testgutenberg.com/wp-content/uploads/2018/02/variety_magazine_native-1-full.jpg" alt="" data-id="762" data-link="https://testgutenberg.com/2018/02/15/gutenberg-for-vips/variety_magazine_native-1-full/" class="wp-image-762"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://testgutenberg.com/wp-content/uploads/2018/02/usp-case-study1.jpg" alt="" data-id="761" data-link="https://testgutenberg.com/2018/02/15/gutenberg-for-vips/usp-case-study1/" class="wp-image-761"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://testgutenberg.com/wp-content/uploads/2017/12/gettyimages-180991567.jpg" alt="" data-id="710" data-link="https://testgutenberg.com/first-hello-kitty-jet-arrives-in-los-angeles/" class="wp-image-710"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://testgutenberg.com/wp-content/uploads/2018/02/abril-case-study.jpg" alt="" data-id="757" data-link="https://testgutenberg.com/abril-case-study/" class="wp-image-757"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://testgutenberg.com/wp-content/uploads/2018/02/facebook.jpg" alt="" data-id="760" data-link="https://testgutenberg.com/2018/02/15/gutenberg-for-vips/facebook/" class="wp-image-760"/></figure></li></ul>
+
+      </div>
+      <div id="included_footer"></div>
+      
+
+    </body>
+    <script> 
+      $(function(){
+        $("#included_navbar").load("navbar/navbar.html");
+        $("#included_footer").load("footer/footer.html");  
+      });
+    </script> 
+</html>

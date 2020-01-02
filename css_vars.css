@@ -1,0 +1,11 @@
+:root {
+    --blog-body-bg-color: #e3e5ee;
+    --page-body-bg-color: white;
+
+    /* --main-bg-color: white; */
+    --content-max-width: 1200px;
+    /* var(--content-max-width); */
+    /* --active-color: #29abe0; */
+    --active-color: #f6b606;
+}
+body{ font-family: "proxima-nova",sans-serif;}
