@@ -1,7 +1,7 @@
 .open-close_sidenav_btn {
   padding: 15px;
   color: #fff;
-  background-color: #000;
+  background-color: transparent!important;
   cursor: pointer;
   transition: 0.5s;
   -webkit-transition: 0.5s;
